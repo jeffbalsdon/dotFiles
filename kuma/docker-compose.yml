@@ -1,6 +1,6 @@
 # Simple docker-compose.yml
 # You can change your port or volume location
-
+# sudo docker run -d --network host --restart=always -p 3001:3001 -v uptime-kuma:/app/data --name uptime-kuma louislam/uptime-kuma:1
 version: '3.3'
 
 services:
