@@ -15,5 +15,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
 source $ZSH/oh-my-zsh.sh
 
+if [ -x "$(command -v exa)" ]; then
+    alias ls="exa --icons"
+    alias la="exa --long --all --group --icons"
+fi
+alias nano="/opt/homebrew/bin/nano"
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-#put here
