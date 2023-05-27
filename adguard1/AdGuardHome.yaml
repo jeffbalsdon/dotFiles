@@ -76,43 +76,7 @@ dns:
     pixabay: true
     yandex: true
     youtube: true
-  rewrites:
-    - domain: pve1.jetstreamstudios.net
-      answer: 192.168.0.2
-    - domain: pve2.jetstreamstudios.net
-      answer: 192.168.0.3
-    - domain: adguard1.jetstreamstudios.net
-      answer: 192.168.0.5
-    - domain: adguard2.jetstreamstudios.net
-      answer: 192.168.0.4
-    - domain: omada.jetstreamstudios.net
-      answer: 192.168.0.1
-    - domain: deco1.jetstreamstudios.net
-      answer: 192.168.0.11
-    - domain: deco2.jetstreamstudios.net
-      answer: 192.168.0.12
-    - domain: deco3.jetstreamstudios.net
-      answer: 192.168.0.13
-    - domain: jellyfin.jetstreamstudios.net
-      answer: 192.168.0.6
-    - domain: kuma.jetstreamstudios.net
-      answer: 192.168.0.7
-    - domain: openvas.jetstreamstudios.net
-      answer: 192.168.0.8
-    - domain: openldap.jetstreamstudios.net
-      answer: 192.168.0.14
-    - domain: plex.jetstreamstudios.net
-      answer: 192.168.0.16
-    - domain: epson.jetstreamstudios.net
-      answer: 192.168.0.15
-    - domain: rogers.jetstreamstudios.net
-      answer: 10.0.0.1
-    - domain: vscode.jetstreamstudios.net
-      answer: 192.168.0.17
-    - domain: dashboard.jetstreamstudios.net
-      answer: 192.168.0.20
-    - domain: jetstream.jetstreamstudios.net
-      answer: 192.168.0.21
+  rewrites: []
   blocked_services: []
   upstream_timeout: 10s
   private_networks: []
