@@ -87,6 +87,18 @@ sections:
           https://images.ctfassets.net/8utyj17y1gom/31NIUo0Jye0nFXSo2mw23M/f969d3c4876dc0cd1ea217cce06e8806/TV___Streaming_1.5x.svg?h=115&w=115&fit=fill&q=100
         target: newtab
         id: 6_2225_rogersignite
+      - title: WikiJS
+        icon: hl-wikijs
+        url: https://wikijs.jetstreamstudios.net
+        target: newtab
+        statusCheck: true
+        id: 7_2225_wikijs
+      - title: PhotoPrism
+        icon: hl-photoprism
+        url: http://photoprism.jetstreamstudios.net:2342
+        target: newtab
+        statusCheck: true
+        id: 8_2225_photoprism
     displayData:
       sortBy: alphabetical
       rows: 1
@@ -97,7 +109,8 @@ sections:
     items:
       - title: Firewall
         icon: hl-omada
-        url: https://omada.jetstreamstudios.net
+        url: https://omada.jetstreamstudios.net/webpages/login.html
+        target: newtab
         statusCheck: true
         statusCheckAllowInsecure: true
         id: 0_1482_firewall
@@ -154,23 +167,24 @@ sections:
         id: 2_1064_pve
       - title: PVE2
         icon: hl-proxmox
-        url: http://pve2.jetstreamstudios.net:8006
+        url: https://pve2.jetstreamstudios.net:8006
         target: newtab
         statusCheck: true
         statusCheckAllowInsecure: true
         id: 3_1064_pve
       - title: OpenVAS
         icon: hl-openvas
-        url: http://openvas.jetstreamstudios.net:9392/login
+        url: https://openvas.jetstreamstudios.net
+        target: newtab
         statusCheck: true
         id: 4_1064_openvas
-      - title: Omada Firewall
+      - title: Omada SDN
         icon: hl-omada
-        url: https://omada.jetstreamstudios.net/webpages/login.html
+        url: https://omadasdn.jetstreamstudios.net:8043
         target: newtab
         statusCheck: true
         statusCheckAllowInsecure: true
-        id: 5_1064_omadafirewall
+        id: 5_1064_omadasdn
       - title: Deco - Basement
         icon: hl-tplink
         url: https://deco1.jetstreamstudios.net
@@ -207,6 +221,12 @@ sections:
         statusCheckAllowInsecure: true
         statusCheckAcceptCodes: '403'
         id: 10_1064_cloudflare
+      - title: Loki
+        icon: hl-loki
+        url: http://loki.jetstreamstudios.net:3000
+        target: newtab
+        statusCheck: true
+        id: 11_1064_loki
   - name: System Monitoring
     icon: fas fa-monitor-heart-rate
     displayData:
@@ -224,20 +244,60 @@ sections:
         id: 0_1739_kumauptime
       - title: JetStream
         icon: hl-debian
-        url: ssh://jetstream.local
+        url: ssh://jetstream.local:22222
         target: newtab
         statusCheck: true
         id: 1_1739_jetstream
       - title: VS Code
         icon: hl-code
-        url: http://vscode.jetstreamstudios.net:8080
+        url: https://vscode.jetstreamstudios.net
         target: newtab
         statusCheck: true
         id: 2_1739_vscode
       - title: OpenLDAP
         icon: >-
           https://www.ldap-account-manager.org/lamcms/sites/default/files/logo.png
-        url: http://openldap.jetstreamstudios.net/lam/
+        url: https://openldap.jetstreamstudios.net
         target: newtab
         statusCheck: true
         id: 3_1739_openldap
+  - name: External Links
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 2
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: GitHub
+        icon: hl-github-light
+        url: https://github.com/jeffbalsdon
+        target: newtab
+        statusCheck: true
+        id: 0_1380_github
+      - title: Facebook
+        icon: hl-facebook
+        url: https://www.facebook.com
+        target: newtab
+        statusCheck: true
+        id: 1_1380_facebook
+      - title: Amazon
+        icon: hl-amazon-light
+        url: https://amazon.ca
+        target: newtab
+        statusCheck: true
+        id: 2_1380_amazon
+      - title: MSN
+        icon: https://en.wikipedia.org/wiki/File:2015_MSN_logo.svg
+        url: https://www.msn.com/en-ca
+        target: newtab
+        statusCheck: true
+        statusCheckAllowInsecure: true
+        id: 3_1380_msn
+      - title: SpeedTest
+        icon: si-speedtest
+        url: https://speedtest.net
+        target: newtab
+        statusCheck: true
+        id: 4_1380_speedtest
+
